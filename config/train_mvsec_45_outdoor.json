@@ -1,0 +1,27 @@
+{
+    "name": "sk_bam_v2",
+    "cuda": true,
+    "gpu": 0,
+    "subtype": "standard",
+    "save_dir": "saved",
+    "data_loader": {
+        "train": {
+            "args": {
+                "batch_size": 4,
+                "shuffle": false,
+                "sequence_length": 5,
+                "num_voxel_bins": 5,
+                "align_to": "image",
+                "datasets": {
+                    "outdoor_day": [
+                        2
+                    ]
+                },
+                "transforms": [
+                    "EventSequenceToVoxelGrid_Pytorch(num_bins=5, normalize=True, gpu=True)",
+                    "RandomCropping(crop_height=256, crop_width=256, fixed=True)"
+                ]
+            }
+        }
+    }
+}

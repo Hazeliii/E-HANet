@@ -1,0 +1,19 @@
+{
+    "name": "dsec_bam_raft",
+    "cuda": true,
+    "gpu": 0,
+    "subtype": "standard",
+    "save_dir": "dsec_bam_split_test",
+    "data_loader": {
+        "test": {
+            "args": {
+                "batch_size": 1,
+                "shuffle": false,
+                "num_voxel_bins": 15
+            }
+        }
+    },
+    "test": {
+        "checkpoint": "checkpoints_dsec/100000_bam_raft.pth"
+    }
+}
