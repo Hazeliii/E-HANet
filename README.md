@@ -8,6 +8,12 @@
 
 ![光流估计结果](./vis/networks.png)
 
+## 原型系统实现
+通过Java程序调用Python程序，实现基于JavaWeb的光流估计原型系统，将用户上传的事件流数据输入网络模型，完成光流估计，对事件图像和光流图像进行可视化，并返回Numpy格式的光流估计结果供用户下载
+![首页](./Java/vis/index.jpg)
+![展示](./Java/vis/show.jpg)
+![下载](./Java/vis/download.jpg)
+
 ## Datasets
 
 ### [DSEC](https://dsec.ifi.uzh.ch/)
